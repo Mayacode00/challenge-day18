@@ -1,0 +1,104 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  background: #695464;
+  color: #ffffff;
+}
+.headings {
+  display: inline-flex;
+  padding-top: 20px;
+}
+.fa-battle-net {
+  font-size: 30px;
+}
+h1 {
+  font-size: 60px;
+  font-weight: 200;
+}
+#calculator {
+  height: 400px;
+  width: 330px;
+  margin: 30px auto;
+  border: 3px solid;
+  border-image: linear-gradient(
+    90deg,
+    rgba(255, 13, 0, 1) 0%,
+    rgba(251, 202, 2, 1) 28%,
+    rgba(4, 237, 4, 1) 54%,
+    rgba(6, 2, 255, 1) 75%,
+    rgba(254, 5, 215, 1) 100%
+  );
+  background: #38132f;
+  padding: 10px;
+  border-image-slice: 1;
+  box-shadow: 3px 6px 20px -1px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 3px 6px 20px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 6px 20px -1px rgba(0, 0, 0, 0.75);
+}
+#number,
+.empty,
+.operator {
+  font-family: inherit;
+  font-size: 16px;
+  width: 40px;
+  height: 40px;
+  margin: 10px;
+  border-radius: 10px;
+  border: 2px solid #460442;
+  float: left;
+  cursor: pointer;
+}
+#result {
+  height: 100px;
+}
+#history {
+  text-align: right;
+  height: 40px;
+  margin: 0 20px;
+  font-size: 16px;
+  color: #ffffff;
+}
+#output {
+  text-align: right;
+  height: 40px;
+  margin: 10px 20px;
+  font-size: 20px;
+}
+button:nth-child(9) {
+  background: #0e8ed8;
+  color: #ffffff;
+}
+button:nth-child(10) {
+  background: #07ca07;
+  color: #ffffff;
+}
+button:nth-child(14) {
+  background: #e26411;
+  color: #f1f0f0;
+}
+button:nth-child(15) {
+  background: #e7eb07;
+  color: #ffffff;
+}
+button:nth-child(18) {
+  background: #c00808;
+  color: #ffffff;
+}
+#number:hover{
+  background: #e7e6e6;
+  transition: ease-in-out;
+  transform: translate(-1px, 1px);
+}
+@media screen and (max-width: 700px){
+  h1{
+    font-size: 40px;
+  }
+  .headings{
+    margin: 20px;
+  }
+}
