@@ -25,7 +25,7 @@ function getFormattedNumber(num) {
 function reverseNumberFormat(num) {
   return Number(num.replace(/,/g, ""));
 }
-let operator = getElementByClassName("operator");
+let operator = getElementsByClassName("operator");
 for (let i = 0; i < operator.length; i++) {
   operator[i].addEventListener("click", function () {
     if (this.id == "clear") {
