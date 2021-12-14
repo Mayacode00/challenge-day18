@@ -2,7 +2,7 @@ function getHistory() {
   return document.getElementById("history-value").innerText;
 }
 function printHistory(num) {
-  return (document.getElementById("history-value").innerText = num);
+   document.getElementById("history-value").innerText = num;
 }
 function getOutput() {
   return document.getElementById("output-value").innerText;
